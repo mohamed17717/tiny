@@ -1,6 +1,26 @@
 # @mohamed17717/tiny
 
-[![npm (scoped)](https://img.shields.io/npm/v/@mohamed17717/tiny.svg)](https://github.com/mohamed17717/tiny)
-[![npm bundle size (minified)](https://img.shields.io/bundlephobia/min/@bamblehorse/tiny.svg)](https://github.com/mohamed17717/tiny)
+[![npm (scoped)](https://img.shields.io/npm/v/@bamblehorse/tiny.svg)](https://www.npmjs.com/package/@bamblehorse/tiny)
+[![npm bundle size (minified)](https://img.shields.io/bundlephobia/min/@bamblehorse/tiny.svg)](https://www.npmjs.com/package/@bamblehorse/tiny)
 
-its the tinest!
+Removes all spaces from a string.
+
+## Install
+
+```
+$ npm install @bamblehorse/tiny
+```
+
+## Usage
+
+```js
+const tiny = require("@bamblehorse/tiny");
+
+tiny("So much space!");
+//=> "Somuchspace!"
+
+tiny(1337);
+//=> Uncaught TypeError: Tiny wants a string!
+//    at tiny (<anonymous>:2:41)
+//    at <anonymous>:1:1
+```
